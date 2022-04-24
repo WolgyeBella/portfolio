@@ -3,4 +3,20 @@
   --point-color: #0834ff;
   --font-color: #424242;
   --font-sub: #ffffff;
+
+  /* font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+*{
+  box-sizing: border-box;
 }
