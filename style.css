@@ -67,7 +67,7 @@ h1{
 }
 
 h2{
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   columns: var(--font-color);
   margin: 8px 0;
@@ -174,10 +174,6 @@ p{
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
-}
-
-.about__description{
-  font-size: var(--font-medium);
 }
 
 .about__description span{
@@ -419,4 +415,65 @@ flex-basis: 40%;
 
 .testimonial__speeach-buble a{
   color: var(--point-color);
+}
+
+/* contact */
+#contact{
+  background: var(--font-white);
+}
+
+.contact__title, .contact__info{
+  color: var(--main-color);
+}
+
+.contact__title{
+  margin: 32px 0;
+}
+
+.contact__info{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact__links li{
+  color: var(--font-grey);
+  font-size: var(--font-regular);
+  line-height: var(--font-medium);
+}
+
+.contact__links span{
+  color: var(--point-color);
+  font-weight: var(--weight-bold);
+}
+
+.contact__thk{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__text{
+  background: var(--main-color);
+  color: var(--font-white);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+}
+
+.contact__rights{
+  font-size: var(--font-micro);
+  color: var(--font-grey-light);
 }
