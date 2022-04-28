@@ -98,6 +98,7 @@ p{
   padding: 16px;
   color: var(--font-grey);
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark{
