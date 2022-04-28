@@ -89,12 +89,20 @@ p{
 
 /* Navbar */
 #navbar{
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--font-white);
+  background-color: transparent;
   align-items: center;
   padding: 16px;
   color: var(--font-grey);
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark{
+  background: var(--font-white);
+  padding: 8px;
 }
 
 .navbar__menu{
@@ -146,6 +154,7 @@ p{
 #home{
   background: url('img/background.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
