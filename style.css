@@ -113,6 +113,10 @@ p{
   margin-right: 5px;
 }
 
+.navbar__logo a{
+  color: var(--main-color);
+}
+
 .navbar__menu__item{
   padding: 8px 12px;
   margin: 0 4px;
@@ -127,6 +131,15 @@ p{
 .navbar__menu__item:hover{
   background-color: var(--main-dark);
   color: var(--font-white);
+}
+
+.navbar__toggle-btn{
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--main-color);
+  display: none;
 }
 
 /* home */
@@ -476,4 +489,53 @@ flex-basis: 40%;
 .contact__rights{
   font-size: var(--font-micro);
   color: var(--font-grey-light);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px){
+  .navbar__toggle-btn{
+    display: block;
+  }
+
+  #navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__wrap{
+    flex-direction: column;
+  }
+
+  .about__description{
+    margin-bottom: 50px;
+  }
+
+  .skillset{
+    flex-direction: column;
+  }
+
+  .project{
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar{
+    width: 80px;
+    height: 80px;
+  }
+
+  .contact__info{
+    flex-direction: column;
+  }
+
+  .contact__links{
+    align-items: center;
+    margin-bottom: 32px;
+  }
 }
