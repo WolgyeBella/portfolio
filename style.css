@@ -407,6 +407,10 @@ flex-basis: 40%;
   background-color: var(--font-white);
 }
 
+.project__description span{
+  color: var(--font-white);
+}
+
 /* testimonial */
 #testimonials{
   background-color: rgba(255, 193, 7, 0.3);
