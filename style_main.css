@@ -9,11 +9,12 @@
   --font-grey: #757575;
   --font-grey-light: #a4a4a4;
   --font-grey-dark: #494949;
-  --font-white: #ffffff;
+--font-white: #ffffff;
 
   /* font size */
   --font-large: 48px;
   --font-medium: 28px;
+  --font-semi-medium: 24px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
@@ -411,46 +412,77 @@ flex-basis: 40%;
   color: var(--font-white);
 }
 
-/* testimonial */
-#testimonials{
+/* always */
+#always{
   background-color: rgba(255, 193, 7, 0.3);
 }
 
-.testimonials{
+.always__container{
   margin: 40px;
-}
-
-.testimonial{
   display: flex;
-  margin: 32px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.testimonial__avatar{
-  width: 150px;
-  height: 150px;
+.always__items{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.always__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.always__item .always__img{
+  width: 250px;
+  height: 250px;
+  background: var(--font-white);
+  position: relative;
   border-radius: 50%;
 }
 
-.testimonial__avatar:nth-child(odd){
-  margin-right: 40px;
+.always__item .always__img img{
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.testimonial__avatar:nth-child(even){
-  margin-left: 40px;
+.always__item .always__text{
+  margin-top: 20px;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--font-white);
 }
 
-.testimonial__speeach-buble{
-  padding: 18px;
-  background-color: var(--font-white);
-  border-radius: var(--size-border-radius);
+.always__description{
+  text-align: left;
+  width: 100%;
+  margin-top: 40px;
+  font-size: var(--font-regular);
+  color: var(--font-grey-dark);
+  word-break: keep-all;
 }
 
-.testimonial__speeach-buble p{
-  color: var(--font-grey-light);
+.always__description span{
+  display: inline-block;
+  position: relative;
+  z-index: 10;
 }
 
-.testimonial__speeach-buble a{
-  color: var(--point-color);
+.always__description span img{
+  width: 110%;
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  transform: rotate(-2deg);
 }
 
 /* contact */
@@ -578,11 +610,19 @@ flex-basis: 40%;
     flex-grow: 1;
   }
 
-  .testimonial__avatar{
-    width: 80px;
-    height: 80px;
+  .always__items{
+    flex-wrap: wrap;
   }
 
+  .always__item .always__img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .always__item .always__text{
+    font-size: var(--font-regular);
+  }
+  
   .contact__info{
     flex-direction: column;
   }
