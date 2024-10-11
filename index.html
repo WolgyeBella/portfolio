@@ -1,244 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bella's Portfolio</title> 
-    <meta name="description" content="Portfolio for Bella">
-    <meta name="author" content="Bella">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/b521825f68.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style_main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella's Portfolio</title>
+    <meta name="description" content="Portfolio for Bella" />
+    <meta name="author" content="Bella" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/b521825f68.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_main.css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar__logo">
-            <img src="img/favicon.png" alt="logo">
-            <a href="https://wolgyebella.github.io/portfolio/">하영</a>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active" data-link="#home">Home</li>
-            <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#skills">Skills</li>
-            <li class="navbar__menu__item" data-link="#work">Work</li>
-            <li class="navbar__menu__item" data-link="#always">Always</li>
-            <li class="navbar__menu__item" data-link="#contact">Contact</li>
-        </ul>
+      <div class="navbar__logo">
+        <img src="img/favicon.png" alt="logo" />
+        <a href="https://wolgyebella.github.io/portfolio/">하영</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">Work</li>
+        <li class="navbar__menu__item" data-link="#always">Always</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
 
-        <!-- Toggle button -->
-        <button class="navbar__toggle-btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
     <!-- Home -->
     <section id="home">
-        <div class="home__container">
-            <img src="img/profile.jpeg" alt="Bella's profile photo" class="home__avatar">
-            <h1 class="home__title">Keep going <br> web publisher KimHayeong</h1>
-            <h2 class="home__description">좋아, 가보자고! 멈추지 말고, 그러나 천천히🙂</h2>
-            <button class="home__contact" data-link="#contact">Contact Me</button>
-        </div>
+      <div class="home__container">
+        <img
+          src="img/profile.jpeg"
+          alt="Bella's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">
+          Keep going <br />
+          frontend developer KimHayeong
+        </h1>
+        <h2 class="home__description">
+          좋아, 가보자고! 멈추지 말고, 그러나 천천히🙂
+        </h2>
+        <button class="home__contact" data-link="#contact">Contact Me</button>
+      </div>
     </section>
     <!-- About -->
     <section id="about" class="section section__container">
-        <h1>About me</h1>
-        <div class="about__wrap">
-            <h2 class="about__description">
-                도전하고, 배우고, 발전하는, <br> 웹퍼블리셔 <span> 김하영 </span> 입니다. <span class="icon">🌱</span>
-            </h2>
-            <div class="about__jobs">
-                <div class="job">
-                    <p class="job__period active">Keep going</p>
-                    <div class="job__pin"></div>
-                    <p class="job__description">인프런, 유튜브 자바스크립트 강의 수강</p>
-                </div>
-                <div class="job">
-                    <p class="job__period">2022.06</p>
-                    <div class="job__pin"></div>
-                    <p class="job__description">UI/UX 웹퍼블리셔, 프론트엔드 양성 과정 수료</p>
-                </div>
-                <div class="job">
-                    <p class="job__period">2020.03</p>
-                    <div class="job__pin"></div>
-                    <p class="job__description">KOICA 청소년 교육 일반봉사단원 온두라스 파견 종료</p>
-                </div>
-                <div class="job">
-                    <p class="job__period">2017.02</p>
-                    <div class="job__pin"></div>
-                    <p class="job__description">백석대학교 사회복지학부 청소년학전공 졸업</p>
-                </div>
-            </div>
+      <h1>About me</h1>
+      <div class="about__wrap">
+        <h2 class="about__description">
+          도전하고, 배우고, 발전하는, <br />
+          프론트엔드 개발자 <span> 김하영 </span> 입니다.
+          <span class="icon">🌱</span>
+        </h2>
+        <div class="about__jobs">
+          <div class="job">
+            <p class="job__period active">Keep going</p>
+            <div class="job__pin"></div>
+            <p class="job__description">엘리스트랙 React 1기 과정</p>
+          </div>
+          <div class="job">
+            <p class="job__period">2022.06~2024.06</p>
+            <div class="job__pin"></div>
+            <p class="job__description">잡코리아 FE개발파트 근무</p>
+          </div>
+          <div class="job">
+            <p class="job__period">2022.06</p>
+            <div class="job__pin"></div>
+            <p class="job__description">
+              UI/UX 웹퍼블리셔, 프론트엔드 양성 과정 수료
+            </p>
+          </div>
+          <div class="job">
+            <p class="job__period">2020.03</p>
+            <div class="job__pin"></div>
+            <p class="job__description">
+              KOICA 청소년 교육 일반봉사단원 온두라스 파견 종료
+            </p>
+          </div>
+          <div class="job">
+            <p class="job__period">2017.02</p>
+            <div class="job__pin"></div>
+            <p class="job__description">
+              백석대학교 사회복지학부 청소년학전공 졸업
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Skills -->
     <section id="skills" class="section">
-        <div class="section__container">
-            <h1>Skills</h1>
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>jQuery</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 60%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>Javascript</span>
-                            <span>30%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 30%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools__list">
-                            <li><span>Visual Studio Code</span></li>
-                            <li><span>Photoshop</span></li>
-                            <li><span>Illustrator</span></li>
-                        </ul>
-                    </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>GitHub</span></li>
-                            <li><span>Excel</span></li>
-                            <li><span>한컴</span></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="section__container">
+        <h1>Skills</h1>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
             </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>jQuery</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>React</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>TypeScript</span>
+                <span>40%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>GitHub</span></li>
+                <li><span>GitLab</span></li>
+                <li><span>Sourcetree</span></li>
+                <li><span>Webpack</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Notion</span></li>
+                <li><span>Jira</span></li>
+                <li><span>wiki</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- work -->
     <section id="work" class="section">
-        <div class="section__container">
-            <h1>My work</h1>
-            <h3>Projects</h3>
-            <div class="work__categories">
-                <button class="category__btn selected" data-filter="*">전체<span class="category__count">4</span></button>
-                <button class="category__btn" data-filter="web">일반<span class="category__count">1</span></button>
-                <button class="category__btn" data-filter="responsive">반응형<span class="category__count">2</span></button>
-                <button class="category__btn" data-filter="mobile">모바일<span class="category__count">1</span></button>
-            </div>
-            <div class="work__projects">
-                <a href="https://wolgyebella.github.io/Dal.Komm_portfolio/" class="project" target="blank" data-type="responsive">
-                    <img src="img/job/dalkom.png" alt="project" class="project__img">
-                    <div class="project__description">
-                        <h3>달콤커피 클론코딩</h3>
-                        <span>HTML,CSS,jQuery,Javascript</span>
-                    </div>
-                </a>
-                <a href="https://wolgyebella.github.io/HiFather_portfolio/" class="project" target="blank" data-type="web">
-                    <img src="img/job/hifather.png" alt="hifather" class="project__img">
-                    <div class="project__description">
-                        <h3>HiFather 리뉴얼</h3>
-                        <span>HTML,CSS,jQuery</span>
-                    </div>
-                </a>
-                <a href="https://wolgyebella.github.io/KorailTourism_portfolio/" class="project" target="blank" data-type="responsive">
-                    <img src="img/job/Korail.png" alt="korail" class="project__img">
-                    <div class="project__description">
-                        <h3>코레일관광개발 리뉴얼</h3>
-                        <span>HTML,CSS,jQuery,Javascript</span>
-                    </div>
-                </a>
-                <a href="#" class="project" target="blank" data-type="mobile">
-                    <img src="img/job/macbook.png" alt="project" class="project__img">
-                    <div class="project__description">
-                        <h3>제작중</h3>
-                        <span>HTML,CSS,jQuery</span>
-                    </div>
-                </a>
-            </div>
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            전체<span class="category__count">4</span>
+          </button>
+          <button class="category__btn" data-filter="web">
+            일반<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="responsive">
+            반응형<span class="category__count">1</span>
+          </button>
+          <button class="category__btn" data-filter="mobile">
+            모바일<span class="category__count">0</span>
+          </button>
         </div>
+        <div class="work__projects">
+          <a
+            href="https://wolgyebella.github.io/Dal.Komm_portfolio/"
+            class="project"
+            target="blank"
+            data-type="responsive"
+          >
+            <img src="img/job/dalkom.png" alt="project" class="project__img" />
+            <div class="project__description">
+              <h3>달콤커피 클론코딩</h3>
+              <span>HTML,CSS,jQuery,Javascript</span>
+            </div>
+          </a>
+          <a
+            href="https://wolgyebella.github.io/HiFather_portfolio/"
+            class="project"
+            target="blank"
+            data-type="web"
+          >
+            <img
+              src="img/job/hifather.png"
+              alt="hifather"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>HiFather 리뉴얼</h3>
+              <span>HTML,CSS,jQuery</span>
+            </div>
+          </a>
+          <a
+            href="https://wolgyebella.github.io/clone_instagram/"
+            class="project"
+            target="blank"
+            data-type="web"
+          >
+            <img
+              src="img/job/clone_instagram.png"
+              alt="clone_instagram"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>인스타그램 클론코딩</h3>
+              <span>HTML,CSS,Javascript</span>
+            </div>
+          </a>
+          <a
+            href="https://chic-sable-daffb2.netlify.app/"
+            class="project"
+            target="blank"
+            data-type="web"
+          >
+            <img
+              src="img/job/todoList.png"
+              alt="투두리스트"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>투두리스트</h3>
+              <span>React, TypeScript</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
     <!-- Always -->
     <section id="always" class="section">
-        <div class="section__container">
-            <h1>Always trying</h1>
-            <div class="always__container">
-                <div class="always__items">
-                    <div class="always__item">
-                        <div class="always__img">
-                            <img src="img/always/logo01.png" alt="Be developed ">
-                        </div>
-                        <p class="always__text"><span>B</span>e developed</p>
-                    </div>
-                    <div class="always__item">
-                        <div class="always__img">
-                            <img src="img/always/logo02.png" alt="Endeavor">
-                        </div>
-                        <p class="always__text"><span>E</span>ndeavor</p>
-                    </div>
-                    <div class="always__item">
-                        <div class="always__img">
-                            <img src="img/always/logo03.png" alt="Sincerity">
-                        </div>
-                        <p class="always__text"><span>S</span>incerity</p>
-                    </div>
-                    <div class="always__item">
-                        <div class="always__img">
-                            <img src="img/always/logo04.png" alt="Tendency">
-                        </div>
-                        <p class="always__text"><span>T</span>endency</p>
-                    </div>
-                </div>
-                <p class="always__description">
-                    #발전하고 #노력하며 #성실하게 #추세를 파악하는 <br>
-                    항상 <span class="txt">BEST</span>한 웹퍼블리셔가 되겠습니다. 제가 더 궁금하시다면 아래 <span>contact<img src="img/always/always__bg.png" alt=""></span>를 참고해주세요🤗
-                </p>
+      <div class="section__container">
+        <h1>Always trying</h1>
+        <div class="always__container">
+          <div class="always__items">
+            <div class="always__item">
+              <div class="always__img">
+                <img src="img/always/logo01.png" alt="Be developed " />
+              </div>
+              <p class="always__text"><span>B</span>e developed</p>
             </div>
+            <div class="always__item">
+              <div class="always__img">
+                <img src="img/always/logo02.png" alt="Endeavor" />
+              </div>
+              <p class="always__text"><span>E</span>ndeavor</p>
+            </div>
+            <div class="always__item">
+              <div class="always__img">
+                <img src="img/always/logo03.png" alt="Sincerity" />
+              </div>
+              <p class="always__text"><span>S</span>incerity</p>
+            </div>
+            <div class="always__item">
+              <div class="always__img">
+                <img src="img/always/logo04.png" alt="Tendency" />
+              </div>
+              <p class="always__text"><span>T</span>endency</p>
+            </div>
+          </div>
+          <p class="always__description">
+            #발전하고 #노력하며 #성실하게 #추세를 파악하는 <br />
+            항상 <span class="txt">BEST</span>한 프론트엔드 개발자가 되겠습니다.
+            제가 더 궁금하시다면 아래
+            <span>contact<img src="img/always/always__bg.png" alt="" /></span>를
+            참고해주세요🤗
+          </p>
         </div>
-        
+      </div>
     </section>
     <!-- contact -->
     <section id="contact" class="section">
-        <h1 class="contact__title">Contact me</h1>
-        <div class="contact__info">
-            <ul class="contact__links">
-                <li class="contact__name"><span>Name</span>  / KimHayeong</li>
-                <li class="contact__email"><span>Email</span>  / <a href="mailto:gkdud9209@gmail.com">gkdud9209@gmail.com</a> </li>
-                <li class="contact__github"><span>GitHub</span>  / <a href="https://github.com/WolgyeBella">https://github.com/WolgyeBella</a></li>
-            </ul>
-            <div class="contact__thk">
-                <h2 class="contact__text">Thank you</h2>
-                <p class="contact__rights">2022 KimHayeong portfolio - All rights reserved</p>
-            </div>
+      <h1 class="contact__title">Contact me</h1>
+      <div class="contact__info">
+        <ul class="contact__links">
+          <li class="contact__name"><span>Name</span> / KimHayeong</li>
+          <li class="contact__email">
+            <span>Email</span> /
+            <a href="mailto:gkdud9209@gmail.com">gkdud9209@gmail.com</a>
+          </li>
+          <li class="contact__github">
+            <span>GitHub</span> /
+            <a href="https://github.com/WolgyeBella"
+              >https://github.com/WolgyeBella</a
+            >
+          </li>
+        </ul>
+        <div class="contact__thk">
+          <h2 class="contact__text">Thank you</h2>
+          <p class="contact__rights">
+            2022 KimHayeong portfolio - All rights reserved
+          </p>
         </div>
+      </div>
     </section>
     <!-- arrow up -->
     <button class="arrow-up">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </button>
-</body>
+  </body>
 </html>
