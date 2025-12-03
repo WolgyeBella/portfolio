@@ -153,9 +153,9 @@ p {
 }
 
 .navbar__menu__item:hover {
-  border-color: var(--point-light);
+  border-color: var(--point-color);
   background-color: var(--point-color);
-  color: var(--font-white);
+  color: var(--font-grey-dark);
 }
 
 .navbar__menu__item.active {
@@ -176,12 +176,13 @@ p {
   position: relative;
   background: var(--main-color);
   background-image: var(--home-bg-svg);
+  /* background: var(--home-bg-gradient); */
   padding: 40px;
   padding-top: 120px;
   text-align: center;
 }
 
-#home::after {
+/* #home::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -195,7 +196,7 @@ p {
   background-color: var(--font-white);
   mask: var(--divider-single-wave);
   -webkit-mask: var(--divider-single-wave);
-}
+} */
 
 .home__avatar {
   width: 250px;
