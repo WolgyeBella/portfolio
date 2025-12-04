@@ -415,6 +415,7 @@ p {
   font-size: var(--font-regular);
   padding: 8px 48px;
   position: relative;
+  color: var(--font-grey-dark);
 }
 
 .category__btn.selected,
@@ -620,7 +621,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 60px;
   overflow: hidden;
   line-height: 0;
   background-color: var(--font-white);
@@ -738,15 +739,17 @@ p {
     top: 16px;
     right: 16px;
     font-size: var(--font-medium);
+    color: var(--font-white);
   }
 
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--font-white);
+    background-color: transparent;
   }
 
   #navbar.navbar--dark {
+    background-color: var(--main-color);
     padding: 16px;
   }
 
@@ -759,6 +762,7 @@ p {
 
   .navbar__menu.open {
     display: block;
+    margin-top: 20px;
   }
 
   .section {
@@ -808,6 +812,11 @@ p {
   .always__item .always__text {
     font-size: var(--font-semi-medium);
     margin: 10px 0;
+  }
+
+  #contact::after {
+    top: -1px;
+    height: 60px;
   }
 
   .contact__info {
