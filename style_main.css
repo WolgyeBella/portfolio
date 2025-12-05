@@ -500,7 +500,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--main-color);
+  color: var(--point-color);
 }
 
 .project__description h3::after {
